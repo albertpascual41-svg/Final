@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev": "concurrently -k \"npm run mongo\" \"npm run server\" \"npm run client\"",
+    "mongo": "node server/start-mongo.cjs",
+    "client": "vite --host 127.0.0.1",
+    "server": "node server/index.cjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "^10.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "lucide-react": "latest",
+    "mongoose": "^9.7.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  }
+}
